@@ -1,0 +1,26 @@
+.main-content {
+font-size: 30px;
+width:100%;
+float:left;
+height:100px;
+background: red;}
+
+.sidebar {
+font-size: 30px;
+width:10%;
+float:left;
+height:550px;
+background: blue;}
+
+.sidebar2 {
+font-size: 30px;
+width:12%;
+float:left;
+height: 644px;
+background: yellow;}
+
+
+
+
+
+
