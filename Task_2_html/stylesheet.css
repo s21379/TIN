@@ -1,0 +1,26 @@
+input[type="text"], input[type="password"], input[type="checkbox"], input[type="button"], input[type="radio"], input[type="submit"], input[type="reset"]
+{
+    font-size:24px;
+    font-family: monospace;
+}
+
+form {
+ font-size:30px;
+ font-family: monospace;
+}
+
+textarea{
+ font-size:20px;
+ font-family: monospace;
+}
+select{
+ font-size:20px;
+ font-family: monospace;
+}
+p {
+font-size:20px;
+ font-family: monospace;}
+
+input[req] {
+  background-color: red;
+}
