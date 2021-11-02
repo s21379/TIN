@@ -8,7 +8,8 @@ function coins1(amount, coins)
    {
      if (amount >= coins[0]) 
        {
-        left = (amount - coins[0]);
+	
+        var left = (amount - coins[0]);
         return [coins[0]].concat( coins1(left, coins) );
         } 
       else
