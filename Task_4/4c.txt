@@ -1,0 +1,36 @@
+function check_Palindrome(wrd){
+   var a = wrd.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+	var ccount = 0;
+
+	if(a==="") {
+		console.log("Incorrect or empty");
+		return false;
+	}
+
+	if ((a.length) % 2 === 0) {
+		ccount = (a.length) / 2;
+	} else {
+
+		if (a.length === 1) {
+			console.log("Palindrome");
+			return true;
+		} else {
+
+			ccount = (a.length - 1) / 2;
+		}
+	}
+
+	for (var x = 0; x < ccount; x++) {
+
+		if (a[x] != a.slice(-1-x)[0]) {
+			console.log("Not a Palindrome.");
+			return false;
+		}
+	}
+	console.log("Palindrome.");
+	return true;
+}
+check_Palindrome('peep');
+check_Palindrome('noon');
+check_Palindrome('head');
+check_Palindrome('a');

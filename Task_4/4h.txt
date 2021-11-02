@@ -1,0 +1,21 @@
+function first_second(arr_num)
+{
+  arr_num.sort(function(x,y)
+           {
+           return x-y;
+           });
+  var a = [arr_num[0]];
+  var result = [];
+  
+  for(var j=1; j < arr_num.length; j++)
+  {
+    if(arr_num[j-1] !== arr_num[j])
+    {
+      a.push(arr_num[j]);
+    }
+  }
+    result.push(a[1],a[a.length-2]);
+  return result.join(',');
+  }
+
+console.log(first_second([1,2,3,4,5]));

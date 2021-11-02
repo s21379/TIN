@@ -1,0 +1,21 @@
+function coins1(amount, coins) 
+{
+ if (amount === 0) 
+  {
+     return [];
+   } 
+ else
+   {
+     if (amount >= coins[0]) 
+       {
+        left = (amount - coins[0]);
+        return [coins[0]].concat( coins1(left, coins) );
+        } 
+      else
+        {
+         coins.shift();
+         return coins1(amount, coins);
+        }
+    }
+} 
+console.log(coins1(46, [25, 10, 5, 2,1]));
