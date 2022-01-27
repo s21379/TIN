@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TaskB</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="firstNumber">First number:</label>
+      <input type="number" id="firstNumber" name="firstNumber" />
+
+      <label for="secondNumber">First number:</label>
+      <input type="number" id="secondNumber" name="secondNumber" />
+
+      <div>
+        <input type="radio" id="plus" name="op" value="plus" />
+        <label for="op">Plus</label>
+
+        <input type="radio" id="minus" name="op" value="minus" />
+        <label for="op">Minus</label>
+
+        <input type="radio" id="multiply" name="op" value="multiply" />
+        <label for="op">Multiply</label>
+
+        <input type="radio" id="divide" name="op" value="divide" />
+        <label for="op">Divide</label>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <div>
+      <p id="result"></p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
